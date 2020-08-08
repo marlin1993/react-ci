@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from "react";
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function validateForm() {
+    return email.length > 0 && password.length > 0;
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +24,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React APPLICATIONS
+          Learn React
         </a>
       </header>
     </div>
