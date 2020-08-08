@@ -40,5 +40,5 @@ jobs:
     - name: Deploy to Heroku
       run: |
         git fetch heroku
-        git reset --hard heroku/master
+        git reset --hard master
         git push heroku master
